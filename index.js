@@ -8,7 +8,7 @@ app.use(cors());
 
 app.get('/', (req, res) => {
     newsapi.v2.topHeadlines({
-        category: 'business',
+        // category: 'business',
         language: 'tr',
         country: 'tr'
     }).then(response => {
